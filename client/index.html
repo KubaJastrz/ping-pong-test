@@ -8,12 +8,16 @@
   </head>
   <body>
     <button onclick="ping()">ping</button>
+    <pre id="output"></pre>
 
     <script>
+      const output = document.querySelector('#output');
       function ping() {
         fetch('https://ping-pong-express.herokuapp.com/ping')
           .then(data => data.text())
-          .then(data => console.log(data));
+          .then(data => {
+            output.innerText = data;
+          });
       }
     </script>
   </body>

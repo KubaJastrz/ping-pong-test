@@ -9,7 +9,8 @@ app.use(helmet());
 app.use(cors());
 
 app.get('/ping', (req, res) => {
-    res.status(200).send('pong');
+    const date = new Date();
+    res.status(200).send(`pong - ${date.toISOString()}`);
 });
 
 app.listen(PORT, () => {
