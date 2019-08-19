@@ -2,7 +2,9 @@
   "name": "ping-pong",
   "version": "0.0.0-development",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "deploy:api": "git subtree push --prefix api heroku master"
+  },
   "workspaces": [
     "api",
     "client"
