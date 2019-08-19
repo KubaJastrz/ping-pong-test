@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ping Pong</title>
+  </head>
+  <body>
+    <button onclick="ping()">ping</button>
+
+    <script>
+      function ping() {
+        fetch('https://ping-pong-express.herokuapp.com/').then(data => console.log(data));
+      }
+    </script>
+  </body>
+</html>

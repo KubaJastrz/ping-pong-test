@@ -1,0 +1,10 @@
+{
+  "name": "ping-pong",
+  "version": "0.0.0-development",
+  "private": true,
+  "scripts": {},
+  "workspaces": [
+    "api",
+    "client"
+  ]
+}
