@@ -12,6 +12,6 @@ app.get('/ping', (req, res) => {
     res.status(200).send('pong');
 });
 
-app.listen('PORT', () => {
+app.listen(PORT, () => {
     console.log(`Ping me at localhost:${PORT}`);
 });
